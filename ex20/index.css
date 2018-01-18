@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+input[name="menu-tab"] {
+    display: none;
+    width: 0;
+    height: 0;
+}
+.content {
+    display: none;
+    border: solid;
+}
+
+.menu-content {
+    padding: 20px;
+    height: 100px;
+    border: solid;
+}
+
+.menu-nav {
+    width: 100%;
+    min-height: 40px;
+    height: 20%;
+    display: flex;
+    flex-flow: row nowrap;
+    border: 2px solid red;
+    justify-content: space-between;
+}
+label {
+    width: 25%;
+    display: table-cell;
+    text-align: center;
+    border: 2px solid gray;
+}
+input:checked+label {
+    border: 2px solid red;
+}

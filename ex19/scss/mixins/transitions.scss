@@ -1,0 +1,6 @@
+@mixin accordionTransitionTime ($time) {
+    transition: visibility $time ease-out, 
+                overflow $time ease-out, 
+                border-color $time ease-out, 
+                height $time ease-out;
+}

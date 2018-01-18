@@ -1,0 +1,17 @@
+@mixin widthAndRoundness ($width: false, $roundness: false) {
+    @if ($width) {
+        width: $width
+    }
+    @if ($roundness) {
+        border-radius: $roundness
+    }
+}
+
+.a {
+    border: solid;
+    @include widthAndRoundness(150px,50%)
+}
+.b {
+    border: solid;
+    @include widthAndRoundness(130px)
+}
